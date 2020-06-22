@@ -1,6 +1,6 @@
 @import "_variables.scss"; //importing the global variables
 
-@import "node_modules/bootstrap/scss/bootstrap.scss";
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
 
 /*THE BEST PRACTICE HERE IS TO IMPORT ONLY THE THINGS YOU NEED FOR YOUR PROJECT, NOT EVERYTHING AS WE RE DOING ABOVE*/
 
@@ -8,7 +8,7 @@
   box-sizing: border-box;
   font-family: "Merriweather Sans", sans-serif;
 }
-body{
+body {
   background: #fafafa;
 }
 .navbar__el {
@@ -23,23 +23,7 @@ body{
   height: 100vh;
   width: 100%;
   background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
-  h4 {
-    font-size: 2rem;
-    color: white;
-    position: absolute;
-    bottom: 10.5rem;
-    left: 1.5rem;
-    line-height: 95%;
-  }
-  h1 {
-    font-size: 2.5rem;
-    white-space: normal;
-    position: absolute;
-    left: 1.5rem;
-    bottom: 4.5rem;
-    color: white;
-    line-height: 95%;
-  }
+
   .main__background--animation {
     height: 100vh;
     width: 100%;
@@ -628,6 +612,71 @@ body{
     transform: translateY(-2000px);
   }
 }
+.main__welcome {
+  display: inline-block;
+  position: absolute;
+  top: 400px;
+  left: 0;
+  width: 100%;
+  height: 200px;
+
+  h4 {
+    font-size: 2rem;
+    color: white;
+    position: absolute;
+    bottom: 10.5rem;
+    left: 1.5rem;
+    line-height: 95%;
+  }
+  h1 {
+    font-size: 2.5rem;
+    white-space: normal;
+    position: absolute;
+    left: 1.5rem;
+    bottom: 4.5rem;
+    color: white;
+    line-height: 95%;
+  }
+}
+
+.social-media__banner {
+  margin-top: 20px;
+  position: absolute;
+  top: 33rem;
+  left: 1rem;
+  height: 200px;
+}
+.social-media__banner ul {
+  left: 0rem;
+  width: 30px;
+  display: flex;
+  padding: 0;
+}
+.social-media__banner li {
+  list-style: none;
+  font-size: 20px;
+  padding: 10px 10px;
+  color: white;
+}
+.social-media__banner a {
+  position: relative;
+  display: block;
+  width: 50px;
+  height: 50px;
+  background-color: white;
+  color: black;
+  text-align: center;
+  border-radius: 50%;
+  box-shadow: 0px 7px 5px rgba(0, 0, 0, 0.5);
+  img {
+    height: 26px;
+    margin-top: 12px;
+  }
+  #fb-icon, #li-icon{
+    margin-left:.5px ;
+  }
+}
+
 
 .main__content {
   position: relative;
@@ -644,26 +693,25 @@ body{
   margin: 0 auto;
 }
 
-.section__title{
+.section__title {
   top: 0;
   margin: 0 auto;
-  display:table; 
+  display: table;
   font-size: 1.9rem;
-  position: relative; 
+  position: relative;
   background: map-get($map: $colors, $key: strong-blue);
   color: white;
-  padding: 5px 10px;
+  padding: 5px 14px;
   border-radius: 4px;
 }
 
 .header-bar {
-
   background: #1b2735;
   height: 4px;
   width: 70px;
-  margin: .5rem auto 1rem;
+  margin: 0.5rem auto 1rem;
 }
-.svg-icon{
+.svg-icon {
   width: 45px;
   margin: 0;
   margin: 1rem 0 2.5rem 0;
@@ -671,7 +719,7 @@ body{
 
 .main__content--about {
   margin: 0;
-  text-align: center;//The margin:auto rule is used when you set a width on the element
+  text-align: center; //The margin:auto rule is used when you set a width on the element
   h1 {
     top: 0;
     font-size: 1.9rem;
@@ -685,7 +733,6 @@ body{
     }
   }
   .about-p {
-    
     padding: 0px 15px;
     margin-bottom: 3rem;
 
@@ -705,7 +752,7 @@ body{
     border-radius: 3px;
     box-shadow: 0 0 30px rgba(0, 0, 0, 0.05);
     margin-bottom: 20px;
-    .skill__card--title{
+    .skill__card--title {
       text-align: start;
       color: map-get($map: $colors, $key: strong-blue);
       padding: 20px 0 10px 10px;
@@ -714,13 +761,13 @@ body{
     .skill {
       display: inline-block;
       position: relative;
-      top:0;
+      top: 0;
       left: 0;
       margin: 5px;
       width: 140px;
       background: #fff;
       padding: 10px 0;
-      .skill-title{
+      .skill-title {
         font-size: 14px;
         color: map-get($map: $colors, $key: strong-blue);
       }
@@ -728,7 +775,7 @@ body{
         height: 100px;
         margin: 0;
         text-align: center;
-        img{
+        img {
           margin: auto;
           max-height: 100%;
           max-width: 120px;
@@ -738,7 +785,8 @@ body{
   }
 }
 
-.test{ //second background
+.test {
+  //second background
 
   position: relative;
   padding: 3rem 15px;
