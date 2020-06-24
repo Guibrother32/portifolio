@@ -9917,8 +9917,19 @@ h3 {
   font-family: "Merriweather Sans", sans-serif;
 }
 
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
 body {
   background: #fafafa;
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 .navbar__el {
@@ -10065,30 +10076,42 @@ body {
   height: 26px;
   margin-top: 12px;
 }
-.social-media__banner a #fb-icon, .social-media__banner a #li-icon {
+.social-media__banner a #fb-icon,
+.social-media__banner a #li-icon {
   margin-left: 0.5px;
+}
+
+.main__content--background {
+  position: absolute;
+  width: 100%;
+  top: 100vh;
+  z-index: -100;
+  left: 0;
+  height: 800px;
+  margin: 0;
+  background: linear-gradient(to right bottom, #edf1fa 50%, #fafafa 50%);
 }
 
 .main__content {
   position: relative;
+  height: 100%;
   padding: 3rem 15px;
   margin: 0;
-  height: 736px;
-  background: linear-gradient(to right bottom, #edf1fa 50%, #fafafa 50%);
   color: #090a0f;
 }
 
-.main__content--container {
+.section__container {
   width: 100%;
   padding: 0 15px;
   margin: 0 auto;
+  margin-bottom: 8rem;
 }
 
 .section__title {
   top: 0;
   margin: 0 auto;
   display: table;
-  font-size: 1.9rem;
+  font-size: 1.7rem;
   position: relative;
   background: #090a0f;
   color: white;
@@ -10171,14 +10194,170 @@ body {
   max-width: 120px;
 }
 
-.test {
+.main__content--studies {
+  text-align: center;
+}
+.main__content--studies .studies__content {
+  text-align: start;
+}
+.main__content--studies .studies__content ul {
+  margin: 0 auto;
+  padding: 0 45px;
+  width: 300px;
+  list-style: none;
+}
+.main__content--studies .studies__content ul li {
   position: relative;
-  padding: 3rem 15px;
-  margin-top: 800px;
-  height: 500px;
-  background: linear-gradient(to right top, #edf1fa 50%, #fafafa 50%);
-  color: #090a0f;
-  z-index: -1;
+  padding-left: 16px;
+  height: 120px;
+}
+.main__content--studies .studies__content ul li strong {
+  color: #9b9b9b;
+  padding-bottom: 5px;
+  font-size: 14px;
+}
+.main__content--studies .studies__content ul #li__big {
+  height: 150px;
+}
+.main__content--studies .studies__content ul li:not(:last-child)::before {
+  content: "";
+  padding: 0;
+  height: 100%;
+  width: 3px;
+  background: black;
+  position: absolute;
+  top: 50px;
+  bottom: -30px;
+  left: -16px;
+}
+.main__content--studies .studies__content ul li:after {
+  content: "●";
+  font-size: 80px;
+  height: 30px;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  left: -55px;
+  top: -125px;
+  color: #f50000;
+}
+
+.main__content--experiences {
+  text-align: center;
+}
+.main__content--experiences .experiences__content {
+  text-align: start;
+}
+.main__content--experiences .experiences__content ul {
+  margin: 0 auto;
+  padding: 0 45px;
+  width: 300px;
+  list-style: none;
+}
+.main__content--experiences .experiences__content ul li {
+  position: relative;
+  padding-left: 16px;
+  height: 120px;
+}
+.main__content--experiences .experiences__content ul li strong {
+  color: #9b9b9b;
+  padding-bottom: 5px;
+  font-size: 14px;
+}
+.main__content--experiences .experiences__content ul li:not(:last-child)::before {
+  content: "";
+  padding: 0;
+  height: 100%;
+  width: 3px;
+  background: black;
+  position: absolute;
+  top: 50px;
+  bottom: -30px;
+  left: -16px;
+}
+.main__content--experiences .experiences__content ul li:after {
+  content: "●";
+  font-size: 80px;
+  height: 30px;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  left: -55px;
+  top: -130px;
+  color: #f50000;
+}
+
+.main__content--contact {
+  text-align: center;
+}
+
+.section__container:last-of-type {
+  margin-bottom: 0;
+}
+
+.contact__card {
+  margin-bottom: 0;
+  width: 100%;
+  height: 150px;
+  padding: 10px 15px;
+  text-align: start;
+}
+.contact__card h4 {
+  font-size: 15px;
+}
+.contact__card p {
+  min-width: 215px;
+  display: inline-block;
+  border-radius: 30px;
+  padding: 5px 15px;
+  border: none;
+  background: #c7c7c7;
+}
+.contact__card button {
+  min-width: 57px;
+  display: inline-block;
+  border-radius: 30px;
+  padding: 5px 15px;
+  border: none;
+  background: #c7c7c7;
+}
+.contact__card button:focus {
+  outline: 0;
+}
+
+#top-scroller {
+  display: none;
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  right: 5px;
+  top: 85%;
+  border: none;
+  background-color: white;
+  border-radius: 50%;
+  opacity: 80%;
+  box-shadow: 0px 7px 5px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+#top-scroller img {
+  width: 80%;
+}
+
+footer {
+  margin: 0;
+  padding: 0;
+  margin-top: auto;
+  height: 35px;
+  color: white;
+  font-size: 13px;
+  background-color: #3f3f3f;
+  text-align: center;
+}
+footer p {
+  display: inline-block;
+  width: 350px;
+  margin: auto;
+  margin-top: 8px;
 }
 
 /*# sourceMappingURL=main.css.map */

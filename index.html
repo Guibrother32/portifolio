@@ -7,6 +7,7 @@
     <title>Gb32</title>
     <link rel="stylesheet" href="styles/main.css">
     <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" defer></script>
 </head>
 
 <body>
@@ -18,16 +19,16 @@
         <div class="collapse navbar-collapse" id="navbarMenu">
             <ul class="navbar-nav justify-content-between">
                 <li class="nav-item navbar-el">
-                    <a href="" class="nav-link">Home</a>
+                    <a href="" class="nav-link" id="home__navbar">Home</a>
                 </li>
                 <li class="nav-item navbar-el">
-                    <a href="" class="nav-link">About</a>
+                    <a href="" class="nav-link" id="about__navbar">About</a>
                 </li>
                 <li class="nav-item navbar-el">
-                    <a href="" class="nav-link">Skills</a>
+                    <a href="" class="nav-link" id="skills__navbar">Skills</a>
                 </li>
                 <li class="nav-item navbar-el">
-                    <a href="" class="nav-link">Contact</a>
+                    <a href="" class="nav-link" id="contact__navbar">Contact</a>
                 </li>
             </ul>
         </div>
@@ -47,8 +48,6 @@
         </div>
 
         <div class="social-media__banner">
-
-
             <ul>
                 <li>
                     <a href="https://github.com/Guibrother32">
@@ -68,9 +67,10 @@
             </ul>
         </div>
     </div>
-
+    <div class="main__content--background"></div>
+    <!--BACKGROUND-->
     <main class="main__content">
-        <section class="main__content--container">
+        <section class="section__container">
             <div class="main__content--about">
                 <h1 class="section__title">ABOUT</h1>
                 <!-- <div class="header-bar"></div> -->
@@ -86,9 +86,10 @@
                     </p>
                 </div>
             </div>
+        </section>
+        <section class="section__container">
             <div class="main__content--skills">
                 <h1 class="section__title">SKILLS</h1>
-
                 <img class="svg-icon" src="images/automation.svg" alt="SVG not supported">
                 <div class="skill__card">
                     <h4 class="skill__card--title">Front-end</h4>
@@ -136,6 +137,13 @@
                         <h4 class="skill-title">SASS</h4>
                         <div class="skill-img-container">
                             <img src="images/sass.png" alt="sass">
+                        </div>
+
+                    </div>
+                    <div class="skill">
+                        <h4 class="skill-title">jQuery</h4>
+                        <div class="skill-img-container">
+                            <img src="images/jquery.png" alt="jquery">
                         </div>
 
                     </div>
@@ -198,13 +206,66 @@
                     </div>
                 </div>
         </section>
-
+        <section class="section__container">
+            <div class="main__content--studies">
+                <h1 class="section__title">EDUCATION</h1>
+                <img class="svg-icon" src="images/book.svg" alt="SVG not supported">
+                <div class="studies__content">
+                    <ul>
+                        <li> 
+                            <strong>2013 - 2015</strong>
+                            <h5>ETE - FMC</h5>
+                            <p>Electronic Tecnician</p>
+                           
+                        </li>
+                        <li id="li__big">
+                            <strong>2017 - 2018</strong>
+                            <h5>EIP - AUSTRALIA</h5>
+                            <p>Diploma of Leadership and Management</p>
+                        </li>
+                        <li>
+                            <strong>2016 - 2021</strong>
+                            <h5>INATEL</h5>
+                            <p>Computer Engineering</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="section__container">
+            <div class="main__content--experiences">
+                <h1 class="section__title">EXPERIENCES</h1>
+                <img class="svg-icon" src="images/laptop.svg" alt="SVG not supported">
+                <div class="experiences__content">
+                    <ul>
+                        <li>
+                            <strong>01/2016 - 12/2016</strong>
+                            <h5>SENSE ltda</h5>
+                            <p>Electronic Tecnician Intern</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="section__container">
+            <div class="main__content--contact">
+                <h1 class="section__title">CONTACT</h1>
+                <img class="svg-icon" src="images/contact.svg" alt="SVG not supported">
+                <div class="contact__card">
+                    <p>guilhermeoliveira@gec.inatel.br</p>
+                    <p>+55 (35) 98864-9967</p>
+                    <a href="images/Guilherme'sResume.pdf" download>
+                        <button type="button">CV</button>
+                    </a>
+                </div>
+            </div>
+        </section>
     </main>
-    <section class="test">
-
-    </section>
+    <button id="top-scroller"><img src="images/arrow_up.svg" alt="up"></button>
 </body>
-
+<footer id="footer">
+    <p>&copy; Made by Gb32. All Rights Reserved.</p>
+</footer>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
     integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
     crossorigin="anonymous"></script>
@@ -214,7 +275,6 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
     integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
     crossorigin="anonymous"></script>
-<script>
-    
-</script>
+
+<script src="script.js"></script>
 </html>
