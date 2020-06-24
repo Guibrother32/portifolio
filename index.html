@@ -41,31 +41,33 @@
         </div>
 
         <div class="main__welcome">
-            <h4>Hello,<br> I'm</h4>
-            <h1 class="main__background--title">
-                GUILHERME<br>COSTA
-            </h1>
+            <div class="main__welcome--title">
+                <h4>Hello,<br> I'm</h4>
+                <h1 class="main__background--title">
+                    GUILHERME<br>COSTA
+                </h1>
+            </div>
+            <div class="social-media__banner">
+                <ul>
+                    <li>
+                        <a href="https://github.com/Guibrother32">
+                            <img id="gb-icon" src="images/github.svg" alt="github">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com/guicosta32/">
+                            <img id="fb-icon" src="images/facebook.svg" alt="fb">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/guilherme-costa-b31512122/">
+                            <img id="li-icon" src="images/linkedin.svg" alt="linkedin">
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </div>
 
-        <div class="social-media__banner">
-            <ul>
-                <li>
-                    <a href="https://github.com/Guibrother32">
-                        <img id="gb-icon" src="images/github.svg" alt="github">
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.facebook.com/guicosta32/">
-                        <img id="fb-icon" src="images/facebook.svg" alt="fb">
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.linkedin.com/in/guilherme-costa-b31512122/">
-                        <img id="li-icon" src="images/linkedin.svg" alt="linkedin">
-                    </a>
-                </li>
-            </ul>
-        </div>
     </div>
     <div class="main__content--background"></div>
     <!--BACKGROUND-->
@@ -89,9 +91,11 @@
         </section>
         <section class="section__container">
             <div class="main__content--skills">
-                <h1 class="section__title">SKILLS</h1>
-                <img class="svg-icon" src="images/automation.svg" alt="SVG not supported">
-                <div class="skill__card">
+                <div>
+                    <h1 class="section__title">SKILLS</h1>
+                    <img class="svg-icon" src="images/automation.svg" alt="SVG not supported">
+                </div>
+                <div class="skill__card" id="front-end">
                     <h4 class="skill__card--title">Front-end</h4>
                     <div class="skill">
                         <h4 class="skill-title">JavaScript</h4>
@@ -148,7 +152,7 @@
 
                     </div>
                 </div>
-                <div class="skill__card">
+                <div class="skill__card" id="back-end">
                     <h4 class="skill__card--title">Back-end</h4>
                     <div class="skill">
                         <h4 class="skill-title">NodeJS</h4>
@@ -177,7 +181,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="skill__card">
+                <div class="skill__card" id="skill-extras">
                     <h4 class="skill__card--title">Extras</h4>
                     <div class="skill">
                         <h4 class="skill-title">Photoshop</h4>
@@ -207,45 +211,46 @@
                 </div>
         </section>
         <section class="section__container">
-            <div class="main__content--studies">
-                <h1 class="section__title">EDUCATION</h1>
-                <img class="svg-icon" src="images/book.svg" alt="SVG not supported">
-                <div class="studies__content">
-                    <ul>
-                        <li> 
-                            <strong>2013 - 2015</strong>
-                            <h5>ETE - FMC</h5>
-                            <p>Electronic Tecnician</p>
-                           
-                        </li>
-                        <li id="li__big">
-                            <strong>2017 - 2018</strong>
-                            <h5>EIP - AUSTRALIA</h5>
-                            <p>Diploma of Leadership and Management</p>
-                        </li>
-                        <li>
-                            <strong>2016 - 2021</strong>
-                            <h5>INATEL</h5>
-                            <p>Computer Engineering</p>
-                        </li>
-                    </ul>
+            <div class="section__container--history">
+                <div class="main__content--studies">
+                    <h1 class="section__title">EDUCATION</h1>
+                    <img class="svg-icon" src="images/book.svg" alt="SVG not supported">
+                    <div class="studies__content">
+                        <ul>
+                            <li>
+                                <strong>2013 - 2015</strong>
+                                <h5>ETE - FMC</h5>
+                                <p>Electronic Tecnician</p>
+
+                            </li>
+                            <li id="li__big">
+                                <strong>2017 - 2018</strong>
+                                <h5>EIP - AUSTRALIA</h5>
+                                <p>Diploma of Leadership and Management</p>
+                            </li>
+                            <li>
+                                <strong>2016 - 2021</strong>
+                                <h5>INATEL</h5>
+                                <p>Computer Engineering</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="main__content--experiences">
+                    <h1 class="section__title">EXPERIENCES</h1>
+                    <img class="svg-icon" src="images/laptop.svg" alt="SVG not supported">
+                    <div class="experiences__content">
+                        <ul>
+                            <li>
+                                <strong>01/2016 - 12/2016</strong>
+                                <h5>SENSE ltda</h5>
+                                <p>Electronic Tecnician Intern</p>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-        </section>
-        <section class="section__container">
-            <div class="main__content--experiences">
-                <h1 class="section__title">EXPERIENCES</h1>
-                <img class="svg-icon" src="images/laptop.svg" alt="SVG not supported">
-                <div class="experiences__content">
-                    <ul>
-                        <li>
-                            <strong>01/2016 - 12/2016</strong>
-                            <h5>SENSE ltda</h5>
-                            <p>Electronic Tecnician Intern</p>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+
         </section>
         <section class="section__container">
             <div class="main__content--contact">
@@ -277,4 +282,5 @@
     crossorigin="anonymous"></script>
 
 <script src="script.js"></script>
+
 </html>

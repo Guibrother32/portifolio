@@ -9940,6 +9940,7 @@ body {
   opacity: 98%;
 }
 
+/**********************WELCOME BACKGROUND*******************************/
 .main__background {
   height: 100vh;
   width: 100%;
@@ -10016,52 +10017,47 @@ body {
 .main__welcome {
   display: inline-block;
   position: absolute;
-  top: 400px;
+  top: 330px;
   left: 0;
   width: 100%;
-  height: 200px;
+  height: 300px;
 }
-.main__welcome h4 {
+.main__welcome .main__welcome--title {
+  height: 70%;
+}
+.main__welcome .main__welcome--title h4 {
   font-size: 2rem;
   color: white;
   position: absolute;
-  bottom: 10.5rem;
   left: 1.5rem;
   line-height: 95%;
 }
-.main__welcome h1 {
+.main__welcome .main__welcome--title h1 {
   font-size: 2.5rem;
   white-space: normal;
   position: absolute;
   left: 1.5rem;
-  bottom: 4.5rem;
+  top: 5.5rem;
   color: white;
   line-height: 95%;
 }
-
-.social-media__banner {
-  margin-top: 20px;
+.main__welcome .social-media__banner {
   position: absolute;
-  top: 33rem;
   left: 1rem;
-  height: 200px;
 }
-
-.social-media__banner ul {
+.main__welcome .social-media__banner ul {
   left: 0rem;
   width: 30px;
   display: flex;
   padding: 0;
 }
-
-.social-media__banner li {
+.main__welcome .social-media__banner li {
   list-style: none;
   font-size: 20px;
   padding: 10px 10px;
   color: white;
 }
-
-.social-media__banner a {
+.main__welcome .social-media__banner a {
   position: relative;
   display: block;
   width: 50px;
@@ -10072,15 +10068,17 @@ body {
   border-radius: 50%;
   box-shadow: 0px 7px 5px rgba(0, 0, 0, 0.5);
 }
-.social-media__banner a img {
+.main__welcome .social-media__banner a img {
   height: 26px;
   margin-top: 12px;
 }
-.social-media__banner a #fb-icon,
-.social-media__banner a #li-icon {
+.main__welcome .social-media__banner a #fb-icon,
+.main__welcome .social-media__banner a #li-icon {
   margin-left: 0.5px;
 }
 
+/******************************************************************/
+/***************************body***********************************/
 .main__content--background {
   position: absolute;
   width: 100%;
@@ -10105,6 +10103,10 @@ body {
   padding: 0 15px;
   margin: 0 auto;
   margin-bottom: 8rem;
+}
+
+.section__container:last-of-type {
+  margin-bottom: 0;
 }
 
 .section__title {
@@ -10133,7 +10135,8 @@ body {
 }
 
 .main__content--about {
-  margin: 0;
+  margin: auto;
+  width: 310px;
   text-align: center;
 }
 .main__content--about h1 {
@@ -10196,6 +10199,7 @@ body {
 
 .main__content--studies {
   text-align: center;
+  margin-bottom: 8rem;
 }
 .main__content--studies .studies__content {
   text-align: start;
@@ -10289,10 +10293,8 @@ body {
 
 .main__content--contact {
   text-align: center;
-}
-
-.section__container:last-of-type {
-  margin-bottom: 0;
+  width: 310px;
+  margin: auto;
 }
 
 .contact__card {
@@ -10343,6 +10345,8 @@ body {
   width: 80%;
 }
 
+/***********************************************************/
+/**********************Footer*******************************/
 footer {
   margin: 0;
   padding: 0;
@@ -10358,6 +10362,60 @@ footer p {
   width: 350px;
   margin: auto;
   margin-top: 8px;
+}
+
+/***********************************************************/
+/**********************MediaQueries**************************/
+@media screen and (min-width: 600px) {
+  .main__welcome {
+    top: 600px;
+  }
+
+  .main__content--skills {
+    max-width: 1050px;
+    margin: auto;
+  }
+
+  #front-end {
+    max-width: 900px;
+    display: inline-block;
+  }
+
+  #back-end {
+    max-width: 450px;
+    display: inline-block;
+    height: 410px;
+  }
+
+  #skill-extras {
+    max-width: 450px;
+    display: inline-block;
+    height: 410px;
+    margin-bottom: 0;
+    margin-left: 5px;
+    position: relative;
+    top: -15.5px;
+  }
+
+  .section__container--history {
+    max-width: 900px;
+    margin: auto;
+  }
+
+  .main__content--studies {
+    margin: 0;
+    width: 447px;
+    display: inline-block;
+    position: relative;
+    top: 0;
+  }
+
+  .main__content--experiences {
+    width: 447px;
+    display: inline-block;
+    position: relative;
+    bottom: 245px;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

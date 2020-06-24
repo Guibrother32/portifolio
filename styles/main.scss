@@ -30,6 +30,8 @@ body {
   opacity: 98%;
 }
 
+/**********************WELCOME BACKGROUND*******************************/
+
 .main__background {
   height: 100vh;
   width: 100%;
@@ -41,20 +43,6 @@ body {
     overflow: hidden;
   }
 }
-
-// .main-background-title {
-//   font-size: 2.5rem;
-//   white-space: normal;
-//   position: absolute;
-//   left: 0;
-//   bottom: 0;
-// }
-
-// html {
-// 	height: 100%;
-// 	background: radial-gradient(ellipse at bottom, #1B2735 0%, #090A0F 100%);
-// 	overflow: hidden;
-// }
 
 #stars {
   width: 1px;
@@ -626,68 +614,71 @@ body {
 .main__welcome {
   display: inline-block;
   position: absolute;
-  top: 400px;
+  top: 330px;
   left: 0;
   width: 100%;
-  height: 200px;
+  height: 300px;
 
-  h4 {
-    font-size: 2rem;
-    color: white;
-    position: absolute;
-    bottom: 10.5rem;
-    left: 1.5rem;
-    line-height: 95%;
+  .main__welcome--title {
+    height: 70%;
+    h4 {
+      font-size: 2rem;
+      color: white;
+      position: absolute;
+      left: 1.5rem;
+      line-height: 95%;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      white-space: normal;
+      position: absolute;
+      left: 1.5rem;
+      top: 5.5rem;
+      color: white;
+      line-height: 95%;
+    }
   }
-  h1 {
-    font-size: 2.5rem;
-    white-space: normal;
+
+  .social-media__banner {
     position: absolute;
-    left: 1.5rem;
-    bottom: 4.5rem;
+    left: 1rem;
+  }
+  .social-media__banner ul {
+    left: 0rem;
+    width: 30px;
+    display: flex;
+    padding: 0;
+  }
+  .social-media__banner li {
+    list-style: none;
+    font-size: 20px;
+    padding: 10px 10px;
     color: white;
-    line-height: 95%;
+  }
+  .social-media__banner a {
+    position: relative;
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    color: black;
+    text-align: center;
+    border-radius: 50%;
+    box-shadow: 0px 7px 5px rgba(0, 0, 0, 0.5);
+    img {
+      height: 26px;
+      margin-top: 12px;
+    }
+    #fb-icon,
+    #li-icon {
+      margin-left: 0.5px;
+    }
   }
 }
 
-.social-media__banner {
-  margin-top: 20px;
-  position: absolute;
-  top: 33rem;
-  left: 1rem;
-  height: 200px;
-}
-.social-media__banner ul {
-  left: 0rem;
-  width: 30px;
-  display: flex;
-  padding: 0;
-}
-.social-media__banner li {
-  list-style: none;
-  font-size: 20px;
-  padding: 10px 10px;
-  color: white;
-}
-.social-media__banner a {
-  position: relative;
-  display: block;
-  width: 50px;
-  height: 50px;
-  background-color: white;
-  color: black;
-  text-align: center;
-  border-radius: 50%;
-  box-shadow: 0px 7px 5px rgba(0, 0, 0, 0.5);
-  img {
-    height: 26px;
-    margin-top: 12px;
-  }
-  #fb-icon,
-  #li-icon {
-    margin-left: 0.5px;
-  }
-}
+/******************************************************************/
+/***************************body***********************************/
 
 .main__content--background {
   position: absolute;
@@ -715,6 +706,9 @@ body {
   margin: 0 auto;
   margin-bottom: 8rem;
 }
+.section__container:last-of-type {
+  margin-bottom: 0;
+}
 
 .section__title {
   top: 0;
@@ -741,7 +735,8 @@ body {
 }
 
 .main__content--about {
-  margin: 0;
+  margin: auto;
+  width: 310px;
   text-align: center; //The margin:auto rule is used when you set a width on the element
   h1 {
     top: 0;
@@ -810,11 +805,11 @@ body {
 
 .main__content--studies {
   text-align: center;
-
+  margin-bottom: 8rem;
   .studies__content {
     text-align: start;
 
-    ul { 
+    ul {
       margin: 0 auto;
       padding: 0 45px;
       width: 300px;
@@ -825,14 +820,13 @@ body {
         // margin-bottom: 30px;
         height: 120px;
 
-        strong{
+        strong {
           color: rgb(155, 155, 155);
-          padding-bottom:5px;
-          font-size:14px;
+          padding-bottom: 5px;
+          font-size: 14px;
         }
-
       }
-      #li__big{
+      #li__big {
         height: 150px;
       }
       li:not(:last-child)::before {
@@ -869,7 +863,7 @@ body {
   .experiences__content {
     text-align: start;
 
-    ul { 
+    ul {
       margin: 0 auto;
       padding: 0 45px;
       width: 300px;
@@ -880,12 +874,11 @@ body {
         // margin-bottom: 30px;
         height: 120px;
 
-        strong{
+        strong {
           color: rgb(155, 155, 155);
-          padding-bottom:5px;
-          font-size:14px;
+          padding-bottom: 5px;
+          font-size: 14px;
         }
-
       }
       li:not(:last-child)::before {
         //not -> last child
@@ -917,10 +910,10 @@ body {
 
 .main__content--contact {
   text-align: center;
+  width: 310px;
+  margin: auto;
 }
-.section__container:last-of-type {
-  margin-bottom: 0;
-}
+
 .contact__card {
   margin-bottom: 0;
   width: 100%;
@@ -969,6 +962,8 @@ body {
     width: 80%;
   }
 }
+/***********************************************************/
+/**********************Footer*******************************/
 
 footer {
   margin: 0;
@@ -984,5 +979,54 @@ footer {
     width: 350px;
     margin: auto;
     margin-top: 8px;
+  }
+}
+/***********************************************************/
+/**********************MediaQueries**************************/
+
+@media screen and (min-width: 600px) {
+  .main__welcome{
+    top: 600px;
+  }
+
+  .main__content--skills{
+    max-width: 1050px;
+    margin: auto;
+  }
+
+  #front-end{
+    max-width: 900px;
+    display: inline-block;
+  }
+  #back-end{
+    max-width: 450px;
+    display: inline-block;
+    height: 410px;
+  }
+  #skill-extras{
+    max-width: 450px;
+    display: inline-block;
+    height: 410px;
+    margin-bottom: 0;
+    margin-left: 5px;
+    position: relative;
+    top: -15.5px;
+  }
+  .section__container--history{
+    max-width: 900px;
+    margin: auto;
+  }
+  .main__content--studies{
+    margin: 0;
+    width: 447px;
+    display: inline-block;
+    position: relative;
+    top: 0;
+  }
+  .main__content--experiences{
+    width: 447px;
+    display: inline-block;
+    position: relative;
+    bottom: 245px;
   }
 }
