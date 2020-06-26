@@ -614,20 +614,20 @@ body {
 .main__welcome {
   display: inline-block;
   position: absolute;
-  top: 330px;
+  top: 43vh;
   left: 0;
   width: 100%;
   height: 300px;
 
   .main__welcome--title {
     height: 70%;
-    h4 {
-      font-size: 2rem;
-      color: white;
-      position: absolute;
-      left: 1.5rem;
-      line-height: 95%;
-    }
+    // h4 {
+    //   font-size: 2rem;
+    //   color: white;
+    //   position: absolute;
+    //   left: 1.5rem;
+    //   line-height: 95%;
+    // }
 
     h1 {
       font-size: 2.5rem;
@@ -674,6 +674,9 @@ body {
     #li-icon {
       margin-left: 0.5px;
     }
+  }
+  .social-media__banner a:hover{
+    background-color: rgba(255, 255, 255, 0.767);
   }
 }
 
@@ -722,12 +725,12 @@ body {
   border-radius: 4px;
 }
 
-.header-bar {
-  background: #1b2735;
-  height: 4px;
-  width: 70px;
-  margin: 0.5rem auto 1rem;
-}
+// .header-bar {
+//   background: #1b2735;
+//   height: 4px;
+//   width: 70px;
+//   margin: 0.5rem auto 1rem;
+// }
 .svg-icon {
   width: 45px;
   margin: 0;
@@ -736,7 +739,7 @@ body {
 
 .main__content--about {
   margin: auto;
-  width: 310px;
+  // width: 310px;
   text-align: center; //The margin:auto rule is used when you set a width on the element
   h1 {
     top: 0;
@@ -766,7 +769,7 @@ body {
   .skill__card {
     // height: 180px;
     background: #fff;
-    border: 1px solid #fff;
+    border: 1px solid #e1e1e1;
     border-radius: 3px;
     box-shadow: 0 0 30px rgba(0, 0, 0, 0.05);
     margin-bottom: 20px;
@@ -800,6 +803,11 @@ body {
         }
       }
     }
+  }
+  .skill__card:hover{
+    transition: 400ms;
+    transform: translateY(-3px);
+    border-bottom: 2px solid #324861;
   }
 }
 
@@ -929,7 +937,7 @@ body {
     border-radius: 30px;
     padding: 5px 15px;
     border: none;
-    background: rgb(199, 199, 199);
+    background: rgba(0, 0, 0, 0.09);
   }
   button {
     min-width: 57px;
@@ -937,10 +945,14 @@ body {
     border-radius: 30px;
     padding: 5px 15px;
     border: none;
-    background: rgb(199, 199, 199);
+    background: rgba(0, 0, 0, 0.09);
   }
   button:focus {
     outline: 0;
+  }
+  button:hover,
+  button:active{
+    color: rgb(0, 255, 0);
   }
 }
 
@@ -985,25 +997,45 @@ footer {
 /**********************MediaQueries**************************/
 
 @media screen and (min-width: 600px) {
-  .main__welcome{
-    top: 600px;
+  .main__welcome {
+    top: 53%;
   }
 
-  .main__content--skills{
+  .profile__pic--div {
+    display: inline-block;
+    position: relative;
+
+  }
+  .main__content--about .profile-content .profile-picture {
+    margin-bottom: 0;
+    height: 250px;
+    box-shadow: -7px 7px map-get($map: $colors, $key: medium-blue);
+  }
+
+  .main__content--about .about-p {
+    position: relative;
+    top: 60px;
+    width: 251px;
+    display: inline-block;
+    text-align: start;
+    margin-bottom: 0;
+  }
+
+  .main__content--skills {
     max-width: 1050px;
     margin: auto;
   }
 
-  #front-end{
+  #front-end {
     max-width: 900px;
     display: inline-block;
   }
-  #back-end{
+  #back-end {
     max-width: 450px;
     display: inline-block;
     height: 410px;
   }
-  #skill-extras{
+  #skill-extras {
     max-width: 450px;
     display: inline-block;
     height: 410px;
@@ -1012,18 +1044,18 @@ footer {
     position: relative;
     top: -15.5px;
   }
-  .section__container--history{
+  .section__container--history {
     max-width: 900px;
     margin: auto;
   }
-  .main__content--studies{
+  .main__content--studies {
     margin: 0;
     width: 447px;
     display: inline-block;
     position: relative;
     top: 0;
   }
-  .main__content--experiences{
+  .main__content--experiences {
     width: 447px;
     display: inline-block;
     position: relative;

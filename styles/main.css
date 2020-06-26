@@ -10017,20 +10017,13 @@ body {
 .main__welcome {
   display: inline-block;
   position: absolute;
-  top: 330px;
+  top: 43vh;
   left: 0;
   width: 100%;
   height: 300px;
 }
 .main__welcome .main__welcome--title {
   height: 70%;
-}
-.main__welcome .main__welcome--title h4 {
-  font-size: 2rem;
-  color: white;
-  position: absolute;
-  left: 1.5rem;
-  line-height: 95%;
 }
 .main__welcome .main__welcome--title h1 {
   font-size: 2.5rem;
@@ -10075,6 +10068,9 @@ body {
 .main__welcome .social-media__banner a #fb-icon,
 .main__welcome .social-media__banner a #li-icon {
   margin-left: 0.5px;
+}
+.main__welcome .social-media__banner a:hover {
+  background-color: rgba(255, 255, 255, 0.767);
 }
 
 /******************************************************************/
@@ -10121,13 +10117,6 @@ body {
   border-radius: 4px;
 }
 
-.header-bar {
-  background: #1b2735;
-  height: 4px;
-  width: 70px;
-  margin: 0.5rem auto 1rem;
-}
-
 .svg-icon {
   width: 45px;
   margin: 0;
@@ -10136,7 +10125,6 @@ body {
 
 .main__content--about {
   margin: auto;
-  width: 310px;
   text-align: center;
 }
 .main__content--about h1 {
@@ -10162,7 +10150,7 @@ body {
 }
 .main__content--skills .skill__card {
   background: #fff;
-  border: 1px solid #fff;
+  border: 1px solid #e1e1e1;
   border-radius: 3px;
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.05);
   margin-bottom: 20px;
@@ -10195,6 +10183,11 @@ body {
   margin: auto;
   max-height: 100%;
   max-width: 120px;
+}
+.main__content--skills .skill__card:hover {
+  transition: 400ms;
+  transform: translateY(-3px);
+  border-bottom: 2px solid #324861;
 }
 
 .main__content--studies {
@@ -10313,7 +10306,7 @@ body {
   border-radius: 30px;
   padding: 5px 15px;
   border: none;
-  background: #c7c7c7;
+  background: rgba(0, 0, 0, 0.09);
 }
 .contact__card button {
   min-width: 57px;
@@ -10321,10 +10314,14 @@ body {
   border-radius: 30px;
   padding: 5px 15px;
   border: none;
-  background: #c7c7c7;
+  background: rgba(0, 0, 0, 0.09);
 }
 .contact__card button:focus {
   outline: 0;
+}
+.contact__card button:hover,
+.contact__card button:active {
+  color: lime;
 }
 
 #top-scroller {
@@ -10368,7 +10365,27 @@ footer p {
 /**********************MediaQueries**************************/
 @media screen and (min-width: 600px) {
   .main__welcome {
-    top: 600px;
+    top: 53%;
+  }
+
+  .profile__pic--div {
+    display: inline-block;
+    position: relative;
+  }
+
+  .main__content--about .profile-content .profile-picture {
+    margin-bottom: 0;
+    height: 250px;
+    box-shadow: -7px 7px #1b2735;
+  }
+
+  .main__content--about .about-p {
+    position: relative;
+    top: 60px;
+    width: 251px;
+    display: inline-block;
+    text-align: start;
+    margin-bottom: 0;
   }
 
   .main__content--skills {

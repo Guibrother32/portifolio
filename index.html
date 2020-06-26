@@ -11,13 +11,15 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-sm navbar-dark bg-dark navbar__el">
-        <a href="index.html" class="navbar-brand">Gb32</a>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark d-flex w-100 navbar__el">
+        <a href="index.html" class="navbar-brand mr-auto">Gb32</a>
         <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarMenu">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarMenu">
-            <ul class="navbar-nav justify-content-between">
+        <div class="collapse navbar-collapse flex-grow-0" id="navbarMenu">
+            <!-- here -->
+            <ul class="navbar-nav text-right-lg">
+                <!-- here -->
                 <li class="nav-item navbar-el">
                     <a href="" class="nav-link" id="home__navbar">Home</a>
                 </li>
@@ -26,6 +28,9 @@
                 </li>
                 <li class="nav-item navbar-el">
                     <a href="" class="nav-link" id="skills__navbar">Skills</a>
+                </li>
+                <li class="nav-item navbar-el">
+                    <a href="" class="nav-link" id="history__navbar">History</a>
                 </li>
                 <li class="nav-item navbar-el">
                     <a href="" class="nav-link" id="contact__navbar">Contact</a>
@@ -42,7 +47,6 @@
 
         <div class="main__welcome">
             <div class="main__welcome--title">
-                <h4>Hello,<br> I'm</h4>
                 <h1 class="main__background--title">
                     GUILHERME<br>COSTA
                 </h1>
@@ -78,14 +82,18 @@
                 <!-- <div class="header-bar"></div> -->
                 <img class="svg-icon" src="images/boss.svg" alt="SVG not supported">
                 <div class="profile-content">
-                    <img src="images/profile_pic.png" alt="Guilherme's Picture" class="profile-picture">
-                </div>
-                <div class="about-p">
-                    <p>Full Stack Web Developer passionate, soon-to-be graduate in Computer Engineering at INATEL.<br> I
-                        eat, sleep and breathe
-                        JavaScript.
-                    <h4>☕</h4>
-                    </p>
+                    <div class="profile__pic--div">
+                        <img class="profile-picture" src="images/profile_pic.png" alt="Guilherme's Picture">
+                    </div>
+                    
+                    <div class="about-p">
+                        <p>Full Stack Web Developer passionate, soon-to-be graduate in Computer Engineering at
+                            INATEL.<br> I
+                            eat, sleep and breathe
+                            JavaScript.
+                        </p>
+                        <h4>☕</h4>
+                    </div>
                 </div>
             </div>
         </section>

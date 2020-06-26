@@ -11,31 +11,47 @@ $('#top-scroller').click(() => {
 });
 
 $('#home__navbar').click(() =>{
+
     event.preventDefault();
-    console.log('test');
-    $('#navbarMenu').removeClass('show');
+    $('#navbarMenu').removeClass('show'); //remove the backdrop
+
     $('html, body').animate({scrollTop: 0}, 800);
+
 });
 
 $('#about__navbar').click(() =>{
     event.preventDefault();
-    console.log('test');
     $('#navbarMenu').removeClass('show');
-    $('html, body').animate({scrollTop: 602}, 800);
+
+    var aboutEl = $('.main__content--about');
+    var aboutElOffset = aboutEl.offset().top - 85;
+   
+    
+    $('html, body').animate({scrollTop: aboutElOffset}, 800);
 });
 
 
 $('#skills__navbar').click(() =>{
     event.preventDefault();
-    console.log('test');
     $('#navbarMenu').removeClass('show');
-    $('html, body').animate({scrollTop: 1265}, 800);
+
+    var skillsOffset = $('.main__content--skills').offset().top - 85;
+    $('html, body').animate({scrollTop: skillsOffset}, 800);
+});
+
+$('#history__navbar').click(() =>{
+    event.preventDefault();
+    $('#navbarMenu').removeClass('show');
+
+    var historyOffset = $('.main__content--studies').offset().top - 85;
+    $('html, body').animate({scrollTop: historyOffset}, 800);
 });
 
 
 $('#contact__navbar').click(() =>{
     event.preventDefault();
-    console.log('test');
     $('#navbarMenu').removeClass('show');
-    $('html, body').animate({scrollTop: 2000}, 800);
+
+    var contactOffset = $('.main__content--contact').offset().top - 85;
+    $('html, body').animate({scrollTop: contactOffset}, 800);
 });
