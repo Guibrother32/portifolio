@@ -9939,6 +9939,9 @@ body {
   width: 100%;
   opacity: 98%;
 }
+.navbar__el img {
+  height: 30px;
+}
 
 /**********************WELCOME BACKGROUND*******************************/
 .main__background {
